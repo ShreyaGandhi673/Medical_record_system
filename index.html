@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Record System</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/1ef8c94506.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Elymaic&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- main page -->
+    <div class="container">
+        <h1>Medical Record System</h1>
+       <button class="addBtn" onclick="showForm()">
+            Add Patient
+        </button>
+        <table id="table">
+        </table>
+    </div>
+
+    <!-- deleting popup -->
+    <div class="popup" id="popup">
+        
+        <div class="head">
+            <h2>Confirm the Patient </h2>
+            <a><i class="fa-solid fa-xmark" onclick="closePopUp()"></i></a>        
+        </div> 
+        <div class=".deleteText">
+                <p id="deleteText"></p>
+        </div>
+        <div class="actions">
+            <button onclick="deleteRecord()" id="dltBtn">Delete</button>
+            <button onclick="closePopUp()" id="cnlBtn">Cancel</button>
+        </div>
+        
+        
+    </div>
+
+   <!-- form -->
+    <div class="form" id="userForm">
+        <form>
+            <input type="text" id="name" placeholder="Patient Name"><br>
+            <input type="date" id="dob" placeholder="Date of Birth"><br>
+            <input type="text" id="history" placeholder="Medical History"><br>
+            <input type="text" id="doctor" placeholder="Doctor"><br>
+            <button onclick="addPatient(event)">Add patient</button>
+        </form>
+
+    </div>
+<script src="./script.js"></script>
+</body>
+</html>

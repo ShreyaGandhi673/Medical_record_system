@@ -1,0 +1,178 @@
+body {
+    /* .noto-sans-elymaic-regular { */
+    font-family: "Noto Sans Elymaic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* } */
+
+}
+.addBtn{
+    background-color: blue;
+    color: white;
+    width: 80px;
+    height: 30px;
+    border: none;
+    font-size: small;
+    border-radius: 7%;
+    /* margin-left: 1%; */
+    padding: none;
+}
+
+/* popup */
+.popup {
+    position: absolute;
+    background: white;
+    margin-left: 35%;
+    border-radius: 5px;
+    justify-content: center;
+    align-self: center;
+    border: 1px solid grey;
+    display: flex;
+    width: 35%;
+    flex-direction: column;
+    display: none;
+    
+
+}
+
+.popup .head {
+    display: flex;
+    flex-direction: row;
+    /* padding: 10px; */
+    border-bottom: 1px solid rgb(149, 146, 146);
+
+}
+
+.popup .head a {
+    /* font-weight: bold; */
+    margin-left: 55%;
+    font-size: 30px;
+    padding: 10px;
+}
+
+#deleteText {
+    /* padding: px; */
+    border-bottom: 1px solid rgb(149, 146, 146);
+}
+
+.actions {
+    padding: 10px;
+    margin-left: 66%;
+    display: flex;
+    flex-direction: row;
+}
+
+.actions #dltBtn {
+    /* margin-right: 10px; */
+    border: 1px solid grey;
+    border-radius: 5px;
+    color: black;
+    background: none;
+}
+
+.actions #cnlBtn {
+    border: 1px solid grey;
+    color: black;
+    border-radius: 5px;
+    background: none;
+    margin-left: 10px;
+
+}
+
+ .form {
+   
+    display: none;
+    margin-left: 30%;
+
+}
+
+form {
+    /* //margin-top: 50px;  */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 40%
+}
+
+form input,
+button,
+select {
+    height: 30px;
+    width: 70%;
+    border-radius: 10px;
+    align-items: center;
+    /* padding: 15px; */
+    border: 1px solid rgb(211, 211, 219);
+    font-size: medium;
+}
+
+form button {
+    color: rgb(240, 237, 237);
+    background: rgb(44, 44, 240);
+}
+.rowbtns {
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+.rowbtns .editbtn {
+   border: 1px solid gray;
+    background: none; 
+    width: 70px;
+    height:30px;
+    border-radius: 5%;
+    font-weight: bold;
+}
+
+.rowbtns .dltbtn {
+    font-weight: bold;
+    margin-left: 10px;
+    border: 1px solid gray;
+    background: none; 
+    width: 70px;
+    height:30px;
+    border-radius: 5%;
+}
+
+#inputbox {
+    border: none;
+    font-weight: 500;
+    background: transparent;
+}
+
+#saveBtn {
+    margin-left: 10px;
+    border: 1px solid gray;
+    background: none; 
+    width: 70px;
+    height:30px;
+    border-radius: 5%;
+    font-weight: bold;
+
+}
+
+/* .btn {
+    border: none;
+    color: white;
+    background-color: green;
+    width: 50%;
+    border-radius: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+} */
+
+tr{
+    font-size: medium;
+}
+
+tr:nth-child(2n+1) {
+    background-color: rgb(232, 232, 240);
+    
+}
+
+
+
+
+ 
